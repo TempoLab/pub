@@ -4,35 +4,45 @@ import Counter from "../islands/Counter.tsx";
 export default function Home() {
   return (
     <>
-      <div>
-        <Head>
-          <title>Fresh App</title>
-        </Head>
-        <div class="p-4 mx-auto max-w-screen-md">
-          <img
-            src="/david_placeholder.jpg"
-            class="w-40"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
-            <p class="bg-800 rounded-xl p-8">
-              Hello, I am Matt. This is my website. I hope you like it.
-            </p>
-            <p class="bg-800 rounded-xl p-8">
-              I built it using Fresh, Tailwind and LOVE! <br />
-              I can also build things with Vue, <span class="text-xs">kinda</span>.
-            </p>
-            <p class="bg-800 rounded-xl p-8">
-              I enjoy working with TS and have an interest in building atmospheric interactive websites.
-            </p>
-            <p class="bg-800 rounded-xl p-8">
-              In my free time I enjoy keeping fit by skipping and relaxing by playing video games, watching shows and reading. <br />
-            </p>
-            <p class="bg-800 rounded-xl p-8">
-              I also have a cat. Hire me.
-            </p>
-          <Counter start={3} />
+      <Head>
+        <title>Landing</title>
+      </Head>
+
+      <div class="relative">
+      <div class="h-screen inset-0 absolute bg-no-repeat bg-cover bg-center" style="background-image: url('/indexBg.jpg')">
         </div>
-      </div>
+
+        <div class="relative">
+          <div class="p-4 mx-auto max-w-screen-md">
+            {/* <div class="flex items-center justify-center">
+              <img
+                src="/open24.png"
+                class="w-40 animate-wiggle"
+                alt="open 24h"
+              />
+            </div> */}
+              <div class="pt-40">
+              <div class="bg-800 rounded-xl p-8 bg-gray-50 bg-opacity-80">
+                <p class="relative">
+                  Welcome to Tempo Land!<br />
+                  <br />
+                  As the proprietor here please accept my invitation to explore this wonderful land. <br />
+                  <br />
+                  What is Tempo Land you ask? <br />
+                  <br />
+                  Why this is my world, everything you see here has been created by me! <br />
+                  <br />
+                  Come stay as long as you like, explore and have fun!
+                </p>
+              </div>
+
+              <a class="m-5 flex items-center justify-center" href="../home">
+                <button class="bg-blue-400 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded-full">Enter</button>
+              </a>
+              </div>
+              </div>
+          </div>
+          </div>
     </>
   );
 }
