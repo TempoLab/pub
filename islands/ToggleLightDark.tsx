@@ -36,24 +36,30 @@ export default function DarkMode(props: DarkModeProps) {
         document.documentElement.classList[w.isDark ? "add" : "remove"]("dark");
     }
 
+    const checkLocalStorage = () => {
+        if (window === undefined) {
+            return
+        }
+    }
+
     const [mode, setMode] = useState(getMode());
 
     const setDarkModeOn = () => {
+        checkLocalStorage()
         localStorage.theme = "dark";
         updateMode();
         setMode("dark");
     };
 
     const setDarkModeOff = () => {
-        if (window === undefined) {
-            return
-        }
+        checkLocalStorage()
         localStorage.theme = "light";
         updateMode();
         setMode("light");
     };
 
     const darkToggle = () => {
+        checkLocalStorage()
         if (localStorage.theme === "light") {
             return setDarkModeOn()
         } if (localStorage.theme === "dark") {
