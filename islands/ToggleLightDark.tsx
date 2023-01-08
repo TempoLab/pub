@@ -45,6 +45,9 @@ export default function DarkMode(props: DarkModeProps) {
     };
 
     const setDarkModeOff = () => {
+        if (window === undefined) {
+            return
+        }
         localStorage.theme = "light";
         updateMode();
         setMode("light");
