@@ -16,7 +16,7 @@ export default function DarkMode(props: DarkModeProps) {
      * Used to format mode as text in screen
      */
     function getMode(): "light" | "dark" | "system" {
-        if (!IS_BROWSER) {
+        if (window === undefined) {
             return props.prev;
         }
         if (localStorage.theme === "dark") {
@@ -40,7 +40,7 @@ export default function DarkMode(props: DarkModeProps) {
         if (window === undefined) {
           return;
         }
-        localStorage[key] = value;
+        localStorage.setItem(key, value);
       }
 
     const [mode, setMode] = useState(getMode());
