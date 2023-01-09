@@ -4,12 +4,12 @@ const setValueInLocalStorage = (key, value) => {
     }
     localStorage.setItem(key, value);
   }
-
+  
   const getValueInLocalStorage = (key) => {
     if (window === undefined) {
         return;
       }
-      localStorage.getItem(key);
+      return localStorage.getItem(key);
   }
 
   export {setValueInLocalStorage, getValueInLocalStorage};
