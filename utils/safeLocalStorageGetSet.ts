@@ -4,7 +4,7 @@ const setValueInLocalStorage = (key, value) => {
     }
     localStorage.setItem(key, value);
   }
-  
+console.log(window)
   const getValueInLocalStorage = (key) => {
     if (window === undefined) {
         return;
