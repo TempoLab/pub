@@ -29,6 +29,9 @@ export default function DarkMode(props: DarkModeProps) {
     }
 
     function updateMode() {
+        if (window === undefined) {
+            return;
+          }
         const w = (window as unknown as { isDark: boolean });
         w.isDark = localStorage.theme === "dark" ||
             (!("theme" in localStorage) &&
