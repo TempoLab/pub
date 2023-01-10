@@ -11,12 +11,12 @@ function getMode(theme): "light" | "dark" {
     if (!IS_BROWSER) {
         return "light";
     }
-    // if (getValueInLocalStorage(theme) === "dark") {
-    //     return "dark";
-    // }
-    // if (getValueInLocalStorage(theme)) {
-    //     return "light";
-    // }
+    if (getValueInLocalStorage(theme) === "dark") {
+        return "dark";
+    }
+    if (getValueInLocalStorage(theme)) {
+        return "light";
+    }
     return "light";
 }
 
@@ -32,7 +32,7 @@ function updateMode() {
 }
 
 export default function DarkMode() {
-    const [mode, setMode] = useState('light')//useState(getMode());
+    const [mode, setMode] = useState(getMode());
 
     const setDarkModeOn = () => {
         setValueInLocalStorage("theme", "dark");
