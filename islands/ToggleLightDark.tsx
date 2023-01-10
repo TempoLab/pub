@@ -56,7 +56,7 @@ export default function DarkMode() {
             return setDarkModeOff()
         }
     }
-
+    return null;
     return (
         <div class="flex gap-2 w-full">
             <DarkButton onClick={darkToggle}>
