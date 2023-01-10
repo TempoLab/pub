@@ -27,7 +27,7 @@ interface NavBarItemProps {
         <nav class="flex flex-col justify-between w-full max-w-screen-md p-4">
           <div class="flex flex-row-reverse justify-between">
             <div class="flex items-center justify-center">
-              <DarkMode />
+              {/* <DarkMode /> */}
             </div>
             <button
               class="p-2 border-solid border-1 border-black rounded hover:bg-gray-300 bg-gray-200 dark:bg-gray-800"
