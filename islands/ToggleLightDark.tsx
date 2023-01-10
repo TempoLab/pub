@@ -24,11 +24,11 @@ function updateMode() {
     if (!IS_BROWSER) {
         return;
       }
-    // const w = (window as unknown as { isDark: boolean });
-    // w.isDark = localStorage.theme === "dark" ||
-    //     (!("theme" in localStorage) &&
-    //         window.matchMedia("(prefers-color-scheme: dark)").matches);
-    // document.documentElement.classList[w.isDark ? "add" : "remove"]("dark");
+    const w = (window as unknown as { isDark: boolean });
+    w.isDark = localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.classList[w.isDark ? "add" : "remove"]("dark");
 }
 
 export default function DarkMode() {
