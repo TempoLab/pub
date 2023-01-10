@@ -5,9 +5,9 @@ import Footer from "../islands/Footer.tsx"
 export default function Boring() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Boring</title>
-      </Head>
+      </Head> */}
       <div class="flex flex-col h-screen w-full max-w-3xl mx-auto p-4">
         <NavBar />
         <div class="grid grid-cols-4 gap-4 mb-6">
