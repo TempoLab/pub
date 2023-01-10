@@ -12,7 +12,7 @@ export default function DarkMode() {
      * Used to format mode as text in screen
      */
     function getMode(theme): "light" | "dark" {
-        if (window === undefined) {
+        if (!IS_BROWSER) {
             return "light";
         }
         // if (getValueInLocalStorage(theme) === "dark") {
@@ -25,7 +25,7 @@ export default function DarkMode() {
     }
 
     function updateMode() {
-        if (window === undefined) {
+        if (!IS_BROWSER) {
             return;
           }
         // const w = (window as unknown as { isDark: boolean });
