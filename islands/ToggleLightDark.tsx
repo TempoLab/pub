@@ -32,11 +32,7 @@ function updateMode() {
 }
 
 export default function DarkMode() {
-    /**
-     * Used to format mode as text in screen
-     */
-
-    const [mode, setMode] = useState(getMode());
+    const [mode, setMode] = useState('light')//useState(getMode());
 
     const setDarkModeOn = () => {
         setValueInLocalStorage("theme", "dark");
@@ -61,8 +57,8 @@ export default function DarkMode() {
     return (
         <div class="flex gap-2 w-full">
             <DarkButton onClick={darkToggle}>
-                {getValueInLocalStorage("theme") === "dark" && <GrActions />}
-                {getValueInLocalStorage("theme") === "light" && <GrMoon />}
+                {/* {getValueInLocalStorage("theme") === "dark" && <GrActions />}
+                {getValueInLocalStorage("theme") === "light" && <GrMoon />} */}
             </DarkButton>
         </div>
     );
