@@ -35,29 +35,29 @@ export default function DarkMode() {
     const [mode, setMode] = useState('light')//useState(getMode());
 
     const setDarkModeOn = () => {
-        // setValueInLocalStorage("theme", "dark");
+        setValueInLocalStorage("theme", "dark");
         updateMode();
         setMode("dark");
     };
 
     const setDarkModeOff = () => {
-        // setValueInLocalStorage("theme", "light");
+        setValueInLocalStorage("theme", "light");
         updateMode();
         setMode("light");
     };
 
     const darkToggle = (theme) => {
-        // if (getValueInLocalStorage(theme) === "light") {
-        //     return setDarkModeOn()
-        // } if (getValueInLocalStorage(theme) === "dark") {
-        //     return setDarkModeOff()
-        //}
+        if (getValueInLocalStorage(theme) === "light") {
+            return setDarkModeOn()
+        } if (getValueInLocalStorage(theme) === "dark") {
+            return setDarkModeOff()
+        }
     }
     return (
         <div class="flex gap-2 w-full">
             <DarkButton onClick={darkToggle}>
-                {/* {getValueInLocalStorage("theme") === "dark" && <GrActions />}
-                {getValueInLocalStorage("theme") === "light" && <GrMoon />} */}
+                {getValueInLocalStorage("theme") === "dark" && <GrActions />}
+                {getValueInLocalStorage("theme") === "light" && <GrMoon />}
             </DarkButton>
         </div>
     );
