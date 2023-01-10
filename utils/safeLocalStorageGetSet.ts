@@ -1,4 +1,5 @@
 const setValueInLocalStorage = (key, value) => {
+    return;
     if (window === undefined) {
       return;
     }
@@ -6,6 +7,7 @@ const setValueInLocalStorage = (key, value) => {
   }
 
   const getValueInLocalStorage = (key) => {
+    return;
     if (window === undefined) {
         return;
       }
