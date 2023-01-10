@@ -14,7 +14,7 @@ function getMode(theme): "light" | "dark" {
     if (getValueInLocalStorage(theme) === "dark") {
         return "dark";
     }
-    if (getValueInLocalStorage(theme)) {
+    if (getValueInLocalStorage(theme) === "light") {
         return "light";
     }
     return "light";
@@ -47,17 +47,17 @@ export default function DarkMode() {
     };
 
     const darkToggle = (theme) => {
-        if (getValueInLocalStorage(theme) === "light") {
+        if (mode === "light") {
             return setDarkModeOn()
-        } if (getValueInLocalStorage(theme) === "dark") {
+        } if (mode === "dark") {
             return setDarkModeOff()
         }
     }
     return (
         <div class="flex gap-2 w-full">
             <DarkButton onClick={darkToggle}>
-                {getValueInLocalStorage("theme") === "dark" && <GrActions />}
-                {getValueInLocalStorage("theme") === "light" && <GrMoon />}
+                {mode === "dark" && <GrActions />}
+                {mode === "light" && <GrMoon />}
             </DarkButton>
         </div>
     );

@@ -1,16 +1,17 @@
+import { IS_BROWSER } from "$fresh/runtime.ts";
+
 const setValueInLocalStorage = (key, value) => {
-    return;
-    if (window === undefined) {
+    if (!IS_BROWSER) {
       return;
     }
     localStorage.setItem(key, value);
   }
 
   const getValueInLocalStorage = (key) => {
-    return;
-    if (window === undefined) {
+    if (!IS_BROWSER) {
         return;
       }
+      console.log(key, localStorage.getItem(key))
       return localStorage.getItem(key);
   }
 
