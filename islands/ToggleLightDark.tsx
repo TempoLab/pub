@@ -35,13 +35,13 @@ export default function DarkMode() {
     const [mode, setMode] = useState('light')//useState(getMode());
 
     const setDarkModeOn = () => {
-        setValueInLocalStorage("theme", "dark");
+        // setValueInLocalStorage("theme", "dark");
         updateMode();
         setMode("dark");
     };
 
     const setDarkModeOff = () => {
-        setValueInLocalStorage("theme", "light");
+        // setValueInLocalStorage("theme", "light");
         updateMode();
         setMode("light");
     };
