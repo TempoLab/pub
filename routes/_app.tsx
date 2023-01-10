@@ -13,7 +13,7 @@ export default function App({ Component }: AppProps) {
             <Head>
                 <script
                     dangerouslySetInnerHTML={{
-                        __html: code,
+                        __html: "" //code,
                     }}
                 />
             </Head>

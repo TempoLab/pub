@@ -30,27 +30,27 @@ interface NavBarItemProps {
               <DarkMode />
             </div>
             <button
-              class="p-2 rounded bg-slate-200 dark:bg-slate-800"
+              class="p-2 border-solid border-1 border-black rounded hover:bg-gray-300 bg-gray-200 dark:bg-gray-800"
               onClick={toggleExpanded}
             >
-              <p class="text-slate-700 dark:text-slate-200"> Tempo Land </p>
+              <p class="text-gray-700 dark:text-gray-200"> Tempo Land </p>
             </button>
           </div>
     
           <div
-            class={`mt-4 invisible border-t border-slate-200 dark:border-slate-800 soverflow-hidden transition-max-height duration-300 ${
-              expanded ? "max-h-screen visible" : "max-h-0"
+            class={`z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 ${
+              expanded ? "block absolute mt-10" : ""
             }`}
           >
-            <ul class="flex flex-col font-bold text-slate-700 dark:text-slate-200">
+            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200">
               <li>
-                <NavBarItem href="/" classList="">Welcome</NavBarItem>
+                <NavBarItem href="/" classList="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Welcome</NavBarItem>
               </li>
               <li>
-                <NavBarItem href="/boring">Boring</NavBarItem>
+                <NavBarItem href="/boring" classList="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Boring</NavBarItem>
               </li>
               <li>
-                <NavBarItem href="/home" classList="">Home</NavBarItem>
+                <NavBarItem href="/home" classList="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Home</NavBarItem>
               </li>
             </ul>
           </div>
