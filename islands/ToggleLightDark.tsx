@@ -1,5 +1,9 @@
 import { DarkButton } from "../components/DarkButton.tsx";
 import { setValueInLocalStorage, getValueInLocalStorage, } from "../utils/safeLocalStorageGetSet.ts"
+import {
+    GrActions,
+    GrMoon,
+} from "https://deno.land/x/react_icons@0.2.3/gr/mod.ts";
 
 export default () => {
     return (
