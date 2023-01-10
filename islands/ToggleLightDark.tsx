@@ -21,7 +21,7 @@ function getMode(theme): "light" | "dark" {
 }
 
 export default () => {
-    console.log(useState)
+    console.log(useState('light'))
     //const [mode, setMode] = useState('light')//useState(getMode());
     return (
         <div class="flex gap-2 w-full">
