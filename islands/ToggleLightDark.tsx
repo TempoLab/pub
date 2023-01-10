@@ -21,7 +21,7 @@ export default function DarkMode() {
         if (getValueInLocalStorage(theme)) {
             return "light";
         }
-        return "system";
+        return "light";
     }
 
     function updateMode() {
@@ -60,8 +60,8 @@ export default function DarkMode() {
     return (
         <div class="flex gap-2 w-full">
             <DarkButton onClick={darkToggle}>
-                {localStorage.theme === "dark" && <GrActions />}
-                {localStorage.theme === "light" && <GrMoon />}
+                {getValueInLocalStorage("theme") === "dark" && <GrActions />}
+                {getValueInLocalStorage("theme") === "light" && <GrMoon />}
             </DarkButton>
         </div>
     );
