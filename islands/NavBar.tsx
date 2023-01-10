@@ -22,7 +22,7 @@ interface NavBarItemProps {
   };
 
     export default function NavBar() {
-    const { expanded, toggleExpanded } = useNavBar();
+    // const { expanded, toggleExpanded } = useNavBar();
     return (
         <nav class="flex flex-col justify-between w-full max-w-screen-md p-4">
           <div class="flex flex-row-reverse justify-between">
@@ -31,7 +31,9 @@ interface NavBarItemProps {
             </div>
             <button
               class="p-2 border-solid border-1 border-black rounded hover:bg-gray-300 bg-gray-200 dark:bg-gray-800"
-              onClick={toggleExpanded}
+              onClick = { () => {
+
+              }}
             >
               <p class="text-gray-700 dark:text-gray-200"> Tempo Land </p>
             </button>
@@ -39,7 +41,7 @@ interface NavBarItemProps {
     
           <div
             class={`z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 ${
-              expanded ? "block absolute mt-10" : ""
+              true ? "block absolute mt-10" : ""
             }`}
           >
             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200">

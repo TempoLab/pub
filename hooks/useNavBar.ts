@@ -6,7 +6,7 @@ import { useCallback, useState } from "preact/hooks";
 //   expanded: boolean;
 //   toggleExpanded: ToggleExpandedSignature;
 // }
-
+//
 // type UseNavBarSignature = () => UseNavBar;
 const useNavBar = () => {
   const [expanded, setExpanded] = useState(false);
