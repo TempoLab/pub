@@ -47,13 +47,12 @@ export default function DarkMode() {
     };
 
     const darkToggle = (theme) => {
-        if (getValueInLocalStorage(theme) === "light") {
-            return setDarkModeOn()
-        } if (getValueInLocalStorage(theme) === "dark") {
-            return setDarkModeOff()
-        }
+        // if (getValueInLocalStorage(theme) === "light") {
+        //     return setDarkModeOn()
+        // } if (getValueInLocalStorage(theme) === "dark") {
+        //     return setDarkModeOff()
+        //}
     }
-    return null;
     return (
         <div class="flex gap-2 w-full">
             <DarkButton onClick={darkToggle}>
