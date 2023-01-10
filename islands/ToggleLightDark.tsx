@@ -7,17 +7,13 @@ import {
     GrMoon,
 } from "https://deno.land/x/react_icons@0.2.3/gr/mod.ts";
 
-interface DarkModeProps {
-    prev: "light" | "dark" | "system";
-}
-
-export default function DarkMode(props: DarkModeProps) {
+export default function DarkMode() {
     /**
      * Used to format mode as text in screen
      */
-    function getMode(theme): "light" | "dark" | "system" {
+    function getMode(theme): "light" | "dark" {
         if (localStorage === undefined) {
-            return props.prev;
+            return "light";
         }
         if (getValueInLocalStorage(theme) === "dark") {
             return "dark";
