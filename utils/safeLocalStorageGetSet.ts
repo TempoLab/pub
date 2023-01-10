@@ -11,7 +11,6 @@ const setValueInLocalStorage = (key, value) => {
     if (!IS_BROWSER) {
         return;
       }
-      console.log(key, localStorage.getItem(key))
       return localStorage.getItem(key);
   }
 
