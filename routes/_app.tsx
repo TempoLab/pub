@@ -10,13 +10,13 @@ export default function App({ Component }: AppProps) {
   global_dark();`;
     return (
         <html>
-            <Head>
+            {/* <Head>
                 <script
                     dangerouslySetInnerHTML={{
                         __html: "" //code,
                     }}
                 />
-            </Head>
+            </Head> */}
             <body class={`bg(gray-100 dark:gray-800) dark:text-gray-100`}>
                 <main class="">
                     <Component />
