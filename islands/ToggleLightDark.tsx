@@ -21,7 +21,8 @@ function getMode(theme): "light" | "dark" {
 }
 
 export default () => {
-    const [mode, setMode] = useState('light')//useState(getMode());
+    console.log(useState)
+    //const [mode, setMode] = useState('light')//useState(getMode());
     return (
         <div class="flex gap-2 w-full">
             <DarkButton onClick={() => {
