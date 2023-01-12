@@ -34,7 +34,7 @@ interface NavBarItemProps {
               class="flex items-center justify-center px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-900"
               onClick = {toggleExpanded}
             >
-              <p class="mr-2 text-gray-700 dark:text-gray-200"> Tempo Land </p>
+              <p class="mr-2 text-gray-700 font-bold dark:text-gray-200"> Tempo Land </p>
               <IconCaretDown />
             </button>
           </div>
