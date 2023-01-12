@@ -5,13 +5,13 @@ export default function ProfileImg(){
   <div class="pt-10 w-32 max-w-full mx-auto">
           {theme.value === "dark" && 
           <img
-              src="/david-placeholder.jpg"
+              src="/david-placeholder-dark-2.jpg"
               class="rounded-full"
               alt="placeholder dark mode"
             />}
             {theme.value === "light" && 
             <img
-              src="/david-placeholder-light.jpg"
+              src="/david-placeholder-2.jpg"
               class="rounded-full"
               alt="placeholder light mode"
             />}
