@@ -13,8 +13,8 @@ export default function Index() {
 
         <div class="relative">
           <div class="p-4 mx-auto max-w-screen-md">
-            <div class="pt-40">
-              <div class="bg-800 rounded-xl p-8 bg-gray-50 bg-opacity-80">
+            <div class="pt-auto">
+              <div class="bg-800 rounded-xl p-8 bg-gray-50 bg-opacity-80 dark:bg-gray-700  dark:bg-opacity-80">
                 <p class="relative">
                   Welcome to Tempo Land!<br />
                   <br />
