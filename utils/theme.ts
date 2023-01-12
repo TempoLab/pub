@@ -3,6 +3,9 @@ import { IS_BROWSER } from "$fresh/runtime.ts";
 
 const getTheme = () => {
     if (!IS_BROWSER) return "light";
+    if (localStorage.getItem("theme") === null) {
+        return "light";
+    }
     return localStorage.getItem("theme");
 }
 
@@ -12,7 +15,7 @@ const setTheme = (value) => {
 }
 
 const theme = signal(getTheme());
-effect(() => setTheme(theme.value));
+effect(() => {setTheme(theme.value)});
 
 effect(() => {
     if (!IS_BROWSER) return;
