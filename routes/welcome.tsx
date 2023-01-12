@@ -31,7 +31,7 @@ export default function Index() {
               </div>
 
               <a class="m-5 flex items-center justify-center" href="../">
-                <button class="bg-blue-400 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded-full">Wait. no! Take me back!</button>
+                <button class="bg-blue-400 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded-full">Wait. No! Take me back!</button>
               </a>
               <a class="m-5 flex items-center justify-center" href="../home">
                 <button class="bg-blue-400 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded-full">Enter!</button>
