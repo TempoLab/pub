@@ -18,16 +18,16 @@ export default function Boring() {
             <h1 class="text-5xl leading-loose font-bold font-heading">Matt Solomon</h1>
             <div class="max-w-none">
               <p class="my-7">
-                Junior software developer.
+                Junior software developer. 🎓
               </p>
               <p class="my-7">
-                I like working in TS and have a passion for creating atmospheric and interactive websites.
+                I like working in TS and have a passion for creating atmospheric 🌆 and interactive 🚀 websites.
               </p>
               <p class="my-7">
-                I enjoy keeping fit with weights and jumping rope.
+                I enjoy keeping fit with weights 🗿 and jumping rope 🦘.
                 </p>
                 <p class="mt-7">
-                My other interests are video games, reading and my pets of which I have a marine saltwater tank and a cat named Suse.
+                My other interests are video games ⚔️, reading 📖 and my pets of which I have a marine saltwater tank 🦈 and a cat named Suse 🐈.
               </p>
             </div>
           </div>
