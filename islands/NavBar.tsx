@@ -45,11 +45,11 @@ interface NavBarItemProps {
             }`}
           >
             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200">
-              <li>
-                <NavBarItem href="/" classList="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Welcome</NavBarItem>
+            <li>
+                <NavBarItem href="/" classList="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Boring</NavBarItem>
               </li>
               <li>
-                <NavBarItem href="/boring" classList="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Boring</NavBarItem>
+                <NavBarItem href="/welcome" classList="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Welcome</NavBarItem>
               </li>
               <li>
                 <NavBarItem href="/home" classList="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Home</NavBarItem>
