@@ -1,5 +1,6 @@
 import DarkMode from "./ToggleLightDark.tsx";
 import {useNavBar} from "../hooks/useNavBar.ts"
+import IconCaretDown from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/caret-down.tsx"
 
 interface NavBarItemProps {
     href: string;
@@ -30,10 +31,11 @@ interface NavBarItemProps {
               <DarkMode />
             </div>
             <button
-              class="p-2 border-solid border-1 border-black rounded hover:bg-gray-300 bg-gray-200 dark:bg-gray-800"
+              class="flex items-center justify-center px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-900"
               onClick = {toggleExpanded}
             >
-              <p class="text-gray-700 dark:text-gray-200"> Tempo Land </p>
+              <p class="mr-2 text-gray-700 dark:text-gray-200"> Tempo Land </p>
+              <IconCaretDown />
             </button>
           </div>
     

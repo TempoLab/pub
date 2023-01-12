@@ -1,6 +1,8 @@
 import { Head } from "$fresh/runtime.ts";
 import NavBar from "../islands/NavBar.tsx";
 import Footer from "../islands/Footer.tsx"
+import ProfileImg from "../islands/ProfileImg.jsx"
+import { theme } from "../utils/theme.ts"
 
 export default function Boring() {
   return (
@@ -27,13 +29,8 @@ export default function Boring() {
             </div>
           </div>
 
-          <div class="col-span-4 md:col-span-1 flex justify-center items-center">
-            <img
-              src="/david-placeholder.jpg"
-              class="w-32 max-w-full p-1 mx-auto mt-2 rounded-full"
-              alt="placeholder"
-            />
-          </div>
+          <ProfileImg />
+
         </div>
           <Footer />
       </div>

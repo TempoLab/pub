@@ -11,7 +11,8 @@ import * as $4 from "./routes/home.tsx";
 import * as $5 from "./routes/index.tsx";
 import * as $$0 from "./islands/Footer.tsx";
 import * as $$1 from "./islands/NavBar.tsx";
-import * as $$2 from "./islands/ToggleLightDark.tsx";
+import * as $$2 from "./islands/ProfileImg.jsx";
+import * as $$3 from "./islands/ToggleLightDark.tsx";
 
 const manifest = {
   routes: {
@@ -25,7 +26,8 @@ const manifest = {
   islands: {
     "./islands/Footer.tsx": $$0,
     "./islands/NavBar.tsx": $$1,
-    "./islands/ToggleLightDark.tsx": $$2,
+    "./islands/ProfileImg.jsx": $$2,
+    "./islands/ToggleLightDark.tsx": $$3,
   },
   baseUrl: import.meta.url,
   config,
